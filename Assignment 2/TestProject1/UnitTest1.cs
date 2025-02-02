@@ -8,7 +8,7 @@ namespace TestProject1
         [SetUp]
         public void Setup()
         {
-            _product = new Product(0,"Ball",0,4);
+            _product = new Product(0, "Ball", 0, 4);
         }
 
         [TestCase(5)]
@@ -16,7 +16,7 @@ namespace TestProject1
         [TestCase(50000)]
         public void Test1(int id)
         {
-             _product.ProdID= id;
+            _product.ProdID = id;
             var newID = _product.ProdID;
             Assert.That(newID, Is.EqualTo(id));
         }
@@ -51,14 +51,14 @@ namespace TestProject1
             var newStock = _product.StockAmount;
             Assert.That(newStock, Is.EqualTo(stockCounter));
         }
-	[TestCase(5)]
-	[TestCase(1000)]
-	[TestCase(10000)]
+        [TestCase(5)]
+        [TestCase(1000)]
+        [TestCase(10000)]
 
-	public void test5(int increase)
-	{
-	     var newStock = _product.increaseStock(increase);
-	     Assert.That(newStock, Is.GreaterThan(4));
-	}
+        public void test5(int increase)
+        {
+            var newStock = _product.increaseStock(increase);
+            Assert.That(newStock, Is.GreaterThan(4));
+        }
     }
 }

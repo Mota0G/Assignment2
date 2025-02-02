@@ -8,23 +8,23 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\dhruv\\.nuget\\packages\\": {},
+    "C:\\Users\\guilh\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dhruv\\OneDrive\\Desktop\\Dhruvin Assignment 2\\Assignment2\\Assignment 2\\Assignment 2\\Assignment 2.csproj",
+      "projectUniqueName": "C:\\Users\\guilh\\Downloads\\hfhf\\Assignment2\\Assignment 2\\Assignment 2\\Assignment 2.csproj",
       "projectName": "Assignment 2",
-      "projectPath": "C:\\Users\\dhruv\\OneDrive\\Desktop\\Dhruvin Assignment 2\\Assignment2\\Assignment 2\\Assignment 2\\Assignment 2.csproj",
-      "packagesPath": "C:\\Users\\dhruv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dhruv\\OneDrive\\Desktop\\Dhruvin Assignment 2\\Assignment2\\Assignment 2\\Assignment 2\\obj\\",
+      "projectPath": "C:\\Users\\guilh\\Downloads\\hfhf\\Assignment2\\Assignment 2\\Assignment 2\\Assignment 2.csproj",
+      "packagesPath": "C:\\Users\\guilh\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\guilh\\Downloads\\hfhf\\Assignment2\\Assignment 2\\Assignment 2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\dhruv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\guilh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -50,7 +50,7 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
+        "auditMode": "direct"
       },
       "SdkAnalysisLevel": "9.0.100"
     },
@@ -73,7 +73,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
