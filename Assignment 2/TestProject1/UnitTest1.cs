@@ -51,5 +51,14 @@ namespace TestProject1
             var newStock = _product.StockAmount;
             Assert.That(newStock, Is.EqualTo(stockCounter));
         }
-    }
+		[TestCase(5)]
+		[TestCase(1000)]
+		[TestCase(10000)]
+
+		public void test5(int increase)
+		{
+			var newStock = _product.increaseStock(increase);
+			Assert.That(newStock, Is.GreaterThan(4));
+		}
+	}
 }
