@@ -60,5 +60,16 @@ namespace TestProject1
             var newStock = _product.increaseStock(increase);
             Assert.That(newStock, Is.GreaterThan(4));
         }
+
+        [TestCase(1)]
+        [TestCase(2)]
+        [TestCase(5)]
+        public void test6(int decrease)
+        {
+            var newStock = _product.decreaseStock(decrease);
+            Assert.That(newStock, Is.LessThan(4));
+        }
+
+
     }
 }
