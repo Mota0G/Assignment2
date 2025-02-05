@@ -8,23 +8,23 @@ namespace TestProject1
         [SetUp]
         public void Setup()
         {
-            _product = new Product(0, "Ball", 0, 4);
+            _product = new Product(0, "Ball", 0, 20);
         }
 
         [TestCase(5)]
         [TestCase(10000)]
         [TestCase(50000)]
-        public void Test1(int id)
+        public void GetCorrectID_input5_input10000_input50000_true(int id)
         {
             _product.ProdID = id;
             var newID = _product.ProdID;
             Assert.That(newID, Is.EqualTo(id));
         }
 
-        [TestCase("@")]
+        [TestCase("tr")]
         [TestCase("gh1234")]
-        [TestCase("")]
-        public void Test2(string name)
+        [TestCase("gh")]
+        public void GetCorrectName_inputtr_inputgh1234_inputgh_true(string name)
         {
             _product.ProdName = name;
             var newName = _product.ProdName;
@@ -34,7 +34,7 @@ namespace TestProject1
         [TestCase(5)]
         [TestCase(1000)]
         [TestCase(5000)]
-        public void Test3(int price)
+        public void GetCorrectPrice_input5_input1000_input5000_true(int price)
         {
             _product.ItemPrice = price;
             var newPrice = _product.ItemPrice;
@@ -45,7 +45,7 @@ namespace TestProject1
         [TestCase(5)]
         [TestCase(1000)]
         [TestCase(500000)]
-        public void Test4(int stockCounter)
+        public void GetCorrectAmount_input5_input1000_input500000_true(int stockCounter)
         {
             _product.StockAmount = stockCounter;
             var newStock = _product.StockAmount;
@@ -55,19 +55,21 @@ namespace TestProject1
         [TestCase(1000)]
         [TestCase(10000)]
 
-        public void test5(int increase)
+        public void GetIncreaseStock_input5_input1000_input10000_true(int increase)
         {
-            var newStock = _product.increaseStock(increase);
-            Assert.That(newStock, Is.GreaterThan(4));
+            _product.increaseStock(increase);
+            var newStock = _product.StockAmount;
+            Assert.That(newStock, Is.GreaterThan(20));
         }
 
-        [TestCase(1)]
-        [TestCase(2)]
+        [TestCase(7)]
+        [TestCase(6)]
         [TestCase(5)]
-        public void test6(int decrease)
+        public void GetDecreseStock_input7_input6_input5_true(int decrease)
         {
-            var newStock = _product.decreaseStock(decrease);
-            Assert.That(newStock, Is.LessThan(4));
+            _product.decreaseStock(decrease);
+            var newStock = _product.StockAmount;
+            Assert.That(newStock, Is.LessThan(20));
         }
 
 

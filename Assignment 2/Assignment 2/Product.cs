@@ -15,16 +15,14 @@
             this.StockAmount = StockAmount;
         }
 
-        public int increaseStock(int increase)
+        public void increaseStock(int increase)
         { 
             this.StockAmount += increase;
-            return this.StockAmount;
         }
       
-        public int decreaseStock(int decrease)
+        public void decreaseStock(int decrease)
         {
             this.StockAmount -= decrease;
-            return this.StockAmount;
         }
       
 
