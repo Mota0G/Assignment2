@@ -78,8 +78,8 @@ namespace TestProject1
             Assert.That(newStock, Is.GreaterThan(20));
         }
 
-        //To test the method to decrese the stock amount
-        //To guarantee the method for decrement of stock works as expected.
+        //To test the method to decrease the stock amount
+        //To guarantee the method for the decrement of stock works as expected.
 
         [TestCase(7)]
         [TestCase(6)]
@@ -92,8 +92,8 @@ namespace TestProject1
         }
 
         // This specific test ensures that the value of DecreaseStock method should not go below zero.
-        // To see what happen if the stock is decreased than the available amount
-        // Should show result as zero rathen than showing negative values.
+        // To see what happens if the stock is decreased than the available amount
+        // Should show the result as zero rather than showing negative values.
 
         [Test]
         public void DecreaseStockWithAmountExceedingStock_ShouldNotGoBelowZero()
@@ -104,9 +104,9 @@ namespace TestProject1
             Assert.That(newStock, Is.EqualTo(0), "When decrease in stock happens it should not go below zero like a negative number.");
         }
 
-        // This test ensure that the ProdName can be set to null.
-        // Certain creiteria should be required if product name is null.
-        // It checks that it handlles such scenerio without any errors.
+        // This test ensures that the ProdName can be set to null.
+        // Certain criteria should be required if the product name is null.
+        // It checks that it handles such a scenario without any errors.
         [Test]
         public void ProductNameSetToNull_ShouldHandleNull()
         {
