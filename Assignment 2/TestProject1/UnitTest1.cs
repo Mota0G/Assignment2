@@ -114,6 +114,7 @@ namespace TestProject1
             _product.ProdName = null;
             Assert.That(_product.ProdName, Is.EqualTo(null), "Product name should be able to be set as null.");
         }
+         
 
     }
 }
