@@ -23,8 +23,13 @@
         public void decreaseStock(int decrease)
         {
             this.StockAmount -= decrease;
+
+            if (this.StockAmount < 0) 
+            {
+                this.StockAmount = 0;
+            }
         }
-      
+
 
     }
 }
